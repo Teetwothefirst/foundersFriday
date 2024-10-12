@@ -5,6 +5,16 @@ import bgImg from '../assets/bg-img.png'
 import logo from '../assets/logo1.png'
 import founderFriday from '../assets/founderFriday.png'
 import lineAcrossLanding from '../assets/lineAcrossLanding.jpg'
+import mswitch from '../assets/mswitch.png'
+import tree from '../assets/tree.png'
+import solana from '../assets/Solana.png'
+import boldspace from '../assets/boldspace.png'
+import bend1 from '../assets/bend1.png'
+import bend2 from '../assets/bend2.png'
+import bend3 from '../assets/bend3.png'
+import bend4 from '../assets/bend4.png'
+
+
 
 function mainSection(){
         const names = ['Mr Belba Ngoy', 'Mr Belba Ngoy', 'Mr Belba Ngoy']
@@ -13,10 +23,10 @@ function mainSection(){
     <div className='pt-14 z-10'>
         {/* Connect, Collaborate, innovate */}
         <div className='md:flex'>
-            <div className='my-5 pt-14 ps-10 w-1/2'>
+            <div className='my-10 w-full md:my-5 pt-14 ps-10 w-1/3'>
                 <small>Join our premier monthly meetup for startup founders and tech visionaries</small>
                 <h3 className='text-violet-700'>Connect, Collaborate, innovate</h3>
-                <p className=''>Every last Friday of the month, we bring together the brightest minds in our local tech ecosystem. 
+                <p className='t'>Every last Friday of the month, we bring together the brightest minds in our local tech ecosystem. 
                 Whether you're a seasoned entrepreneur or just starting your journey, 
                     Founder's Friday is your launchpad for new ideas, valuable connections, and game-changing opportunities.
                 </p>
@@ -26,14 +36,23 @@ function mainSection(){
                 <div className='mt-1'>
                     <small>Join Us for our next meetup on the 26th of July 2024</small>
                 </div>
+                <div className='flex gap-5 mt-5'>
+                    <img src={mswitch} alt=""  width={40}/>
+                    <img src={tree} alt=""  width={40}/>
+                    <img src={boldspace} alt=""  width={40}/>
+                    <img src={solana} alt=""  width={40}/>
+                </div>
+                <div className='mt-3'>
+                    <strong>Become a collaborator today <i class="bi bi-box-arrow-up-right"></i></strong>
+                </div>
             </div>
-            <div className='md:flex align-end'>
+            <div className='md:w-full flex align-end relative'>
                 <img src={lineAcrossLanding} alt="" width={`70%`}/>
-                <div>
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
+                <div className='md:absolute top-10'> 
+                    <img src={bend1} alt="" width={`50%`} className='relative top-20 left-20'/>
+                    <img src={bend2} alt="" width={`50%`}  className='relative bottom-20 left-64    '/>
+                    <img src={bend3} alt="" width={`20%`}  className='relative top-70 left-32'/>
+                    <img src={bend4} alt=""  width={`20%`}  className='relative top-100 left-32'/>
                 </div>
             </div>
         </div>
