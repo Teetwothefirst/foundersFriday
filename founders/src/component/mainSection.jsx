@@ -48,11 +48,11 @@ function mainSection(){
             </div>
             <div className='md:w-full flex align-end relative'>
                 <img src={lineAcrossLanding} alt="" width={`70%`}/>
-                <div className='md:absolute top-10'> 
+                <div className='md:absolute top-2'> 
                     <img src={bend1} alt="" width={`50%`} className='relative top-20 left-20'/>
-                    <img src={bend2} alt="" width={`50%`}  className='relative bottom-20 left-64    '/>
-                    <img src={bend3} alt="" width={`20%`}  className='relative top-70 left-32'/>
-                    <img src={bend4} alt=""  width={`20%`}  className='relative top-100 left-32'/>
+                    <img src={bend2} alt="" width={`50%`}  className='relative bottom-20 left-64'/>
+                    <img src={bend3} alt="" width={`30%`}  className='relative bottom-32 left-8'/>
+                    <img src={bend4} alt=""  width={`20%`}  className='relative bottom-32 left-32'/>
                 </div>
             </div>
         </div>
@@ -85,16 +85,21 @@ function mainSection(){
 
         {/* What we offer */}
 
-        <div className='px-5'>
+        <div className='px-5 mt-20'>
             <h3 className='text-center'>What we offer</h3>
             {offerDatas.map((offerData)=>(
-                <div className='flex justify-between my-4'>
-                    {/* (i)dot, h3 ,p i */}
-                    <i className="bi bi-circle-fill"></i>
-                    <h4>{offerData}</h4>
-                    <p>Our cornerstone event, held on the last Friday of every month, 
-                        featuring keynote speakers,<br /> panel discussions, and ample networking opportunities.</p>
+                <div className='px-5'>
+                    <div className='flex justify-between my-4'>
+                        {/* (i)dot, h3 ,p i */}
+                        <i className="bi bi-circle-fill"></i>
+                        <h4>{offerData}</h4>
+                        <p>Our cornerstone event, held on the last Friday of every month, 
+                            featuring keynote speakers,<br /> panel discussions, and ample networking opportunities.</p>
                         <i className="bi bi-plus-lg"></i>
+                    </div> 
+                    <div>
+                        <hr />
+                    </div>
                 </div>
             ))}
         </div>
