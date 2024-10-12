@@ -3,16 +3,151 @@ import videoImage from '../assets/videoImg.png'
 import lineJustAboveTestimonial from '../assets/lineJustAboveTestimonial.png'
 import bgImg from '../assets/bg-img.png'
 import logo from '../assets/logo1.png'
+import founderFriday from '../assets/founderFriday.png'
+import lineAcrossLanding from '../assets/lineAcrossLanding.jpg'
 
 function mainSection(){
         const names = ['Mr Belba Ngoy', 'Mr Belba Ngoy', 'Mr Belba Ngoy']
-  
+        const offerDatas = ['Monthly Meetups', 'Diverse Network', 'Knowledge Sharing', 'Collaboration   Opportunities', 'Community Support']
     return <>
-    <div>
+    <div className='pt-14 z-10'>
+        {/* Connect, Collaborate, innovate */}
+        <div className='md:flex'>
+            <div className='my-5 pt-14 ps-10 w-1/2'>
+                <small>Join our premier monthly meetup for startup founders and tech visionaries</small>
+                <h3 className='text-violet-700'>Connect, Collaborate, innovate</h3>
+                <p className=''>Every last Friday of the month, we bring together the brightest minds in our local tech ecosystem. 
+                Whether you're a seasoned entrepreneur or just starting your journey, 
+                    Founder's Friday is your launchpad for new ideas, valuable connections, and game-changing opportunities.
+                </p>
+                <div className='mt-5'>
+                    <button className='border-2 border-violet-800 rounded-full p-2'>Register for our next event <i className="bi bi-chevron-double-right"></i> </button>
+                </div>
+                <div className='mt-1'>
+                    <small>Join Us for our next meetup on the 26th of July 2024</small>
+                </div>
+            </div>
+            <div className='md:flex align-end'>
+                <img src={lineAcrossLanding} alt="" width={`70%`}/>
+                <div>
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                </div>
+            </div>
+        </div>
+
+
+
+
+        {/* Who are we  */}
+        <div className='px-5 md:flex justify-around'>
+            <div>
+                <img src={founderFriday} alt="" />
+            </div>
+            <div className='md:flex flex-col justify-center align-center'>
+                {/* <div>  */}
+                    <h3>Who are we</h3>
+                    <p>Born from the vibrant startup ecosystem of Abuja, we recognized <br />
+                    the need for a consistent, high-quality networking platform where <br />
+                    founders, innovators, and tech enthusiasts could connect, share <br /> ideas, and foster collaboration.</p>
+                    <div className=''>
+                        <button className='border bg-violet-700 border-violet-700 text-white px-7 py-1 rounded-full'>Register <i className="bi bi-arrow-right"></i></button>
+                        <button className='border border-violet-700 bg-white text-violet-700 px-7 py-1 '>Donate</button>
+                    </div>
+                    <div className='mt-5'>
+                        <strong>Founder's Friday is more than just a meetup — it's a movement.</strong>
+                    </div>
+                {/* </div> */}
+            </div>
+        </div>
+
+
+        {/* What we offer */}
+
+        <div className='px-5'>
+            <h3 className='text-center'>What we offer</h3>
+            {offerDatas.map((offerData)=>(
+                <div className='flex justify-between my-4'>
+                    {/* (i)dot, h3 ,p i */}
+                    <i className="bi bi-circle-fill"></i>
+                    <h4>{offerData}</h4>
+                    <p>Our cornerstone event, held on the last Friday of every month, 
+                        featuring keynote speakers,<br /> panel discussions, and ample networking opportunities.</p>
+                        <i className="bi bi-plus-lg"></i>
+                </div>
+            ))}
+        </div>
+
+
+        {/*What happens at Founders Friday  */}
         <div>
+            <div className='md:flex justify-between'>
+                <div>
+                    <strong>Founders Friday</strong>
+                    <h1>What Happens At <br />Founders Friday</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac rutrum felis. 
+                        Nulla nibh lorem, facilisis vel est at, vehicula dignissim lacus. 
+                        Cras sagittis imperdiet dolor, eget accumsan leo suscipit id.
+                        Maecenas ut ante quis quam lobortis consequat eu id turpis. 
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+                        <button className='px-3 py-1 border rounded-full bg-violet-700 text-white'>Learn More ---</button>
+                </div>
+                <div>
+                    <img src="" alt="" />
+                </div>
+            </div>
+        </div>
+
+
+        {/* Sponsor */}
+        <div>
+            <div className='md:flex justify-between'>
+                <div className=''>
+                    <strong className='text-violet-700'>Sponsor the next Friday</strong>
+                    <h3>Why Sponsor <br />Founders Friday?</h3>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac rutrum felis. 
+                        Nulla nibh lorem, facilisis vel est at, vehicula dignissim lacus. 
+                        Cras sagittis imperdiet dolor, eget accumsan leo suscipit id. 
+                        Maecenas ut ante quis quam lobortis consequat eu id turpis. 
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+                </div>
+            </div>
+            <div className='md:flex justify-between'>
+                <div className='md:grid grid-cols-2 gap-5'>
+                    <div>
+                        <div className='border'>
+                            {/* border-violet-700 rounded-full */}
+                            <h4>Networking Opportunites</h4>
+                            <p>Connect with industry leaders, founders, and potential partners.</p>
+                        </div>
+                        <div>
+                            <h4>Community Impact</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Brand Association</p>
+                    </div>
+                </div>
+                <div>
+                    <strong>How to Sponsor</strong>
+                    <i>Ready to make an impact</i>
+                    <p>Fill out the form below or contact us at [contact email/phone number] to learn more about how you can sponsor the next Founders Friday</p>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {/* Going to Kaduna */}
+        <div className='my-10'>
             <div className='relative'>
                 <img src={bgImg} alt="" width={`100%`}/>
-                <div className='absolute top-24 text-white'>
+                <div className='absolute top-0 md:top-24 text-white'>
                     <div className='px-5 md: flex justify-between gap-5'>
                         <div>
                             <h3>Founders Friday is coming to</h3>
@@ -22,6 +157,7 @@ function mainSection(){
                                 eget accumsan leo suscipit id. <br />Maecenas ut ante quis quam lobortis consequat eu id turpis. 
                                 Pellentesque habitant morbi tristique senectus et <br />netus et malesuada fames ac turpis egestas
                             </p>
+                            <button className='border border-violet-700 text-white px-7 py-1 rounded-full'>Register <i className="bi bi-arrow-right"></i></button>
                         </div>
                         <div>
                             <img src={logo} alt="" />
@@ -57,7 +193,7 @@ function mainSection(){
                 <strong>At Founder’s Friday, Every Friday Is a Learning Experience!</strong>
                 <p>Join us in our mission to transform ideas into impact and shape the future of Nigeria’s startup landscape.</p>
                 <div>
-                <button className="bg-violet-700 text-white py-2 px-8 border rounded-full">Register <i class="bi bi-arrow-right"></i></button>
+                <button className="bg-violet-700 text-white py-2 px-8 border rounded-full">Register <i className="bi bi-arrow-right"></i></button>
                 </div>
                 
             </div>

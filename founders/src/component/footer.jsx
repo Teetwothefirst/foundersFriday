@@ -16,7 +16,7 @@ function Footer(){
             <div>
             <div><h3>Want To Be A Part Of Abuja’s Biggest Tech Community?</h3></div>
             <div className='flex justify-center'>
-                <button className='border-2 border-violet-800 rounded-full p-2'>Register for our next event <i class="bi bi-chevron-double-right"></i> </button>
+                <button className='border-2 border-violet-800 rounded-full p-2'>Register for our next event <i className="bi bi-chevron-double-right"></i> </button>
             </div>
             </div>
         </div>
