@@ -70,7 +70,7 @@ function mainSection(){
             </div>
             <div className='md:flex flex-col justify-center align-center'>
                 {/* <div>  */}
-                    <h3>Who are we</h3>
+                    <h3 className='text-2xl font-bold'>Who are we</h3>
                     <p>Born from the vibrant startup ecosystem of Abuja, we recognized <br />
                     the need for a consistent, high-quality networking platform where <br />
                     founders, innovators, and tech enthusiasts could connect, share <br /> ideas, and foster collaboration.</p>
@@ -89,13 +89,13 @@ function mainSection(){
         {/* What we offer */}
 
         <div className='px-5 mt-20'>
-            <h3 className='text-center'>What we offer</h3>
+            <h3 className='text-center text-2xl font-bold'>What we offer</h3>
             {offerDatas.map((offerData)=>(
                 <div className='px-5'>
                     <div className='flex justify-between my-4'>
                         {/* (i)dot, h3 ,p i */}
                         <i className="bi bi-circle-fill"></i>
-                        <h4>{offerData}</h4>
+                        <h4 className='text-xl font-bold'>{offerData}</h4>
                         <p>Our cornerstone event, held on the last Friday of every month, 
                             featuring keynote speakers,<br /> panel discussions, and ample networking opportunities.</p>
                         <i className="bi bi-plus-lg"></i>
@@ -109,23 +109,23 @@ function mainSection(){
 
 
         {/*What happens at Founders Friday  */}
-        <div>
-            <div className='md:flex justify-between'>
-                <div>
-                    <strong>Founders Friday</strong>
+        <div className=''>
+            <div className='md:flex justify-between relative px-10'>
+                <div className='w-1/2 mt-10'>
+                    <strong className='text-violet-700'>Founders Friday</strong>
                     <h1>What Happens At <br />Founders Friday</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac rutrum felis. 
                         Nulla nibh lorem, facilisis vel est at, vehicula dignissim lacus. 
                         Cras sagittis imperdiet dolor, eget accumsan leo suscipit id.
                         Maecenas ut ante quis quam lobortis consequat eu id turpis. 
                         Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-                        <button className='px-3 py-1 border rounded-xl bg-violet-700 text-white'>Learn More <i className="bi bi-arrow-right"></i> </button>
+                        <button className='mt-3 px-4 py-2 border rounded-xl bg-violet-700 text-white'>Learn More <i className="bi bi-arrow-right"></i> </button>
                 </div>
-                <div>
-                    <img src={whatHappensLine} alt="" />
-                    <div className='md:absolute'>
-                        <img src={whatHappens1} alt="" width={`50%`}/>
-                        <img src={whatHappens} alt="" width={`50%`}/>
+                <div className='absolute'>
+                    {/* <img src={whatHappensLine} alt="" className='md:relative h-full bottom-60 w-full'/> */}
+                    <div className='md:relative'>
+                        {/* <img src={whatHappens1} alt="" width={`20%`} className='md:absolute right-20'/>
+                        <img src={whatHappens} alt="" width={`20%`}/> */}
                     </div>
                 </div>
             </div>
@@ -133,11 +133,11 @@ function mainSection(){
 
 
         {/* Sponsor */}
-        <div>
+        <div className='md:py-32 px-10'>
             <div className='md:flex justify-between'>
                 <div className=''>
                     <strong className='text-violet-700'>Sponsor the next Friday</strong>
-                    <h3>Why Sponsor <br />Founders Friday?</h3>
+                    <h3 className='text-4xl font-bold'>Why Sponsor <br />Founders Friday?</h3>
                 </div>
                 <div className='w-full md:w-1/2 mb-14'>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac rutrum felis. 
@@ -147,27 +147,64 @@ function mainSection(){
                         Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
                 </div>
             </div>
-            <div className='md:flex justify-between'>
-                <div className='md:grid grid-cols-2 gap-5'>
-                    <div>
-                        <div className='border p-5 rounded-full w-48 h-48'>
-                            {/* border-violet-700 rounded-full */}
-                            <h4>Networking Opportunites</h4>
-                            <p>Connect with industry leaders, founders, and potential partners.</p>
+
+            {/* Chart */}
+            <div className='md:flex justify-between gap-8 px-10'>
+                <div className='border border-violet-500 shadow-2xl p-3 rounded-xl md:w-full flex justify-center'>            
+                    <div className='md:flex gap-10'>
+                        <div className=''>
+                            <div className='border p-8 rounded-full w-56 h-56 text-center'>
+                                {/* border-violet-700 rounded-full */}
+                                <h4 className='text-xl font-bold'>Networking Opportunites</h4>
+                                <p>Connect with industry leaders, founders, and potential partners.</p>
+                            </div><br />
+                            <div className='border p-8 rounded-full w-56 h-56 text-center'>
+                                {/* border-violet-700 rounded-full */}
+                                <h4 className='text-xl font-bold'>Brand Association</h4>
+                                <p>Connect with industry leaders, founders, and potential partners.</p>
+                            </div>
                         </div>
-                        <div>
-                            <h4>Community Impact</h4>
+                        <div className=''>
+                            <div className='border p-8 rounded-full w-56 h-56 text-center'>
+                                {/* border-violet-700 rounded-full */}
+                                <h4 className='text-xl font-bold'>Community Impact</h4>
+                                <p>Connect with industry leaders, founders, and potential partners.</p>
+                            </div><br />
+                            <div className='border p-8 rounded-full w-56 h-56 text-center'>
+                                {/* border-violet-700 rounded-full */}
+                                <h4 className='text-xl font-bold'>Visibility</h4>
+                                <p>Connect with industry leaders, founders, and potential partners.</p>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <p>Brand Association</p>
-                    </div>
-                </div>
-                <div>
-                    <strong>How to Sponsor</strong>
-                    <i>Ready to make an impact</i>
+                </div>  
+                <div className='md:pt-3 w-4/5'>
+                    <strong>How to Sponsor</strong><br />
+                    <i className='font-thin text-slate-500'>Ready to make an impact</i>
                     <p>Fill out the form below or contact us at [contact email/phone number] to learn more about how you can sponsor the next Founders Friday</p>
                     <div>
+                        <form action="" className='mt-5 md:grid grid-cols-2 gap-5'>
+                            <div>
+                                <label htmlFor="" className='block'>Name</label>
+                                <input type="text" name="" id="" className='border border-slate-500 rounded-md h-8' />
+                            </div>
+                            <div>
+                                <label htmlFor="" className='block'>Company</label>
+                                <input type="text" name="" id="" className='border border-slate-500 rounded-md h-8' />
+                            </div>
+                            <div>
+                                <label htmlFor="" className='block'>Email</label>
+                                <input type="email" name="" id="" className='border border-slate-500 rounded-md h-8' />
+                            </div>
+                            <div>
+                                <label htmlFor="" className='block'>Phone</label>
+                                <input type="number" name="" id="" className='border border-slate-500 rounded-md h-8' /> 
+                            </div>
+
+                            <div>
+                                <button className='px-7 py-2 border rounded-xl bg-violet-700 text-white'>Sponsor <i className="ps-2 bi bi-arrow-right"></i></button>
+                            </div>
+                        </form>
 
                     </div>
                 </div>
@@ -181,7 +218,7 @@ function mainSection(){
                 <div className='absolute top-0 md:top-24 text-white'>
                     <div className='px-5 md: flex justify-between gap-5'>
                         <div>
-                            <h3>Founders Friday is coming to</h3>
+                            <h3 className='text-2xl font-bold'>Founders Friday is coming to</h3>
                             <h1 className='text-violet-700'>Kaduna</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac <br /> rutrum felis. 
                                 Nulla nibh lorem, facilisis vel est at, vehicula dignissim <br /> lacus. Cras sagittis imperdiet dolor, 
@@ -200,24 +237,40 @@ function mainSection(){
 
 
         {/* Roadmap */}
-        <div className="px-5 my-10">
-            <div>
-                <h3>Register And Be Part of Our Community</h3>
+        <div className="px-5 my-24">
+            <div className='flex justify-center items-center'>
+                <div className='mb-20'>               
+                <h3 className='text-2xl font-bold text-center'>Register And Be Part of Our Community</h3>
                 <p>Join our community of over 1000+ founders, developers, and tech junkies in general.Be inspired by people who live to inspire!</p>
+                </div>
             </div>
-            <div>
+            <div className='relative'>
                 <img src={lineJustAboveTestimonial} alt="" width={`100%`}/>
+                {/* Start */}
+                <img src={profile} alt="" width={`10%`} className='absolute top-20 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='absolute bottom-32 left-48 border rounded-full '/>
+                {/* Middle */}
+                <img src={profile} alt="" width={`10%`} className='absolute top-20 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='absolute top-20 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='absolute top-20 border rounded-full '/>
+                {/* End */}
+                <img src={profile} alt="" width={`10%`} className='absolute top-20 right-0 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='absolute bottom-32 right-32 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='absolute top-20 border rounded-full '/>
+
+
             </div>
-            <div className='my-10'>
-                <button className="px-14 bg-white text-violet-700 py-2">Register Now</button>
+            <div className='my-10 flex items-center justify-center'>
+                <button className="px-14 bg-white text-violet-700 py-2 border border-2 border-violet-700 rounded-full">Register Now <i className="bi bi-arrow-right"></i></button>
             </div>
         </div>
 
 
         {/* Video Proof */}
         <div className="md:flex justify-between px-5 gap-5">
-            <div>
+            <div className='relative'>
                 <img src={videoImage} alt="" />
+               
             </div>
             <div className='flex justify-center flex-col'>
                 
@@ -235,7 +288,7 @@ function mainSection(){
         <div className="md:flex justify-center">
             <div>
                 <div className="my-14">
-                    <div className=""><h3 className="text-center">What Do Our Attendees Have To Say?</h3></div>
+                    <div className=""><h3 className="text-center text-2xl font-bold">What Do Our Attendees Have To Say?</h3></div>
                     <div>
                         <p className="text-center">Well See For Yourself!</p>
                     </div>
@@ -261,7 +314,7 @@ function mainSection(){
 
         {/* FAQs Section */}
         <div className='my-10 md:px-10'>
-            <h3 className="">FAQs</h3>
+            <h3 className="text-2xl font-bold">FAQs</h3>
             <div className="px-11 md: flex justify-evenly gap-11">
                 <div>Lorem ipsum dolor sit amet, consectetur adi elit.</div>
                 <div>Lorem ipsum dolor sit amet, consectetur adi elit.</div>

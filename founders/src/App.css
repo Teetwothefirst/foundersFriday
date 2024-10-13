@@ -45,14 +45,11 @@ body{
   font-optical-sizing: auto;
   font-style: clamp(100%, 1rem + 2vw, 24px);
 }
-/* h3{
-  font-size: 26px;
-  font-weight: bold;
-} */
-h4{
+
+/* h4{
   font-size: 20px;
   font-weight: bold;
-}
+} */
 h1{
   font-size: 40px;
   font-weight: bold;

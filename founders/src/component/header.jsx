@@ -9,7 +9,7 @@ function header(){
 
             <div className='flex items-center'>
                 <img src={logo} alt="Founders Friday Logo" />
-                <h3>Founder's Friday</h3>
+                <h3 className='text-2xl font-bold'>Founder's Friday</h3>
             </div>
             <div className=''>
             <div className='visible md:invisible'>

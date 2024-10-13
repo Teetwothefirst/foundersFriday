@@ -10,7 +10,9 @@ function Footer(){
     <div className="mt-2.5 border-t-2 border-indigo-400">
         <div className='flex'>
             <img src={logo} alt="Founders Friday Logo" />
-            <strong>Founders <br/> Friday</strong>
+            <div className='flex items-center'>
+                <strong className=''>Founders <br/> Friday</strong>
+            </div>
         </div>
         <div className='flex justify-center align-center'>
             <div>
