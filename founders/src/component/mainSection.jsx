@@ -76,7 +76,7 @@ function mainSection(){
                     founders, innovators, and tech enthusiasts could connect, share <br /> ideas, and foster collaboration.</p>
                     <div className='mt-3 flex gap-5'>
                         <button className='border bg-violet-700 border-violet-700 text-white px-7 py-1 rounded-full'>Register <i className="bi bi-arrow-right"></i></button>
-                        <button className='border border-violet-700 bg-white text-violet-700 px-7 py-1 rounded-full'>Donate</button>
+                        <button className='border border-violet-700 bg-white text-violet-700 px-7 py-1 rounded-full'>Donate <i class="bi bi-cash-coin"></i></button>
                     </div>
                     <div className='mt-5'>
                         <strong>Founder's Friday is more than just a meetup — it's a movement.</strong>
@@ -94,7 +94,7 @@ function mainSection(){
                 <div className='px-5'>
                     <div className='flex flex-col md:flex justify-between my-4'>
                         {/* (i)dot, h3 ,p i */}
-                        <i className="bi bi-circle-fill"></i>
+                        <i className="bi bi-circle-fill text-violet-700"></i>
                         <h4 className='text-xl font-bold'>{offerData}</h4>
                         <p>Our cornerstone event, held on the last Friday of every month, 
                             featuring keynote speakers,<br /> panel discussions, and ample networking opportunities.</p>
@@ -216,19 +216,19 @@ function mainSection(){
             <div className='relative'>
                 <img src={bgImg} alt="" width={`100%`}/>
                 <div className='absolute top-0 md:top-24 text-white'>
-                    <div className='px-5 md: flex justify-between gap-5'>
-                        <div>
-                            <h3 className='text-2xl font-bold'>Founders Friday is coming to</h3>
-                            <h1 className='text-violet-700'>Kaduna</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac <br /> rutrum felis. 
+                    <div className='w-full px-5 md: flex justify-between gap-5'>
+                        <div className='w-full'>
+                            <h3 className='text-lg md:text-2xl font-bold'>Founders Friday is coming to</h3>
+                            <h1 className='text-xl md:text-4xl text-violet-700'>Kaduna</h1>
+                            <p className='hidden md:visible'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac <br /> rutrum felis. 
                                 Nulla nibh lorem, facilisis vel est at, vehicula dignissim <br /> lacus. Cras sagittis imperdiet dolor, 
                                 eget accumsan leo suscipit id. <br />Maecenas ut ante quis quam lobortis consequat eu id turpis. 
                                 Pellentesque habitant morbi tristique senectus et <br />netus et malesuada fames ac turpis egestas
                             </p>
-                            <button className='border border-violet-700 text-white px-7 py-1 rounded-full'>Register <i className="bi bi-arrow-right"></i></button>
+                            <button className='border border-violet-700 text-white rounded-full p-1 md:px-7 py-1 '>Register <i className="bi bi-arrow-right"></i></button>
                         </div>
                         <div>
-                            <img src={logo} alt="" />
+                            <img src={logo} alt="" className='md:w-full'/>
                         </div>
                     </div>
                 </div>
@@ -247,16 +247,16 @@ function mainSection(){
             <div className='relative'>
                 <img src={lineJustAboveTestimonial} alt="" width={`100%`}/>
                 {/* Start */}
-                <img src={profile} alt="" width={`10%`} className='md:absolute top-20 border rounded-full '/>
-                <img src={profile} alt="" width={`10%`} className='md:absolute bottom-32 left-48 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='absolute top-5 md:absolute top-20 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='absolute left-10 top-0 md:absolute bottom-32 left-48 border rounded-full '/>
                 {/* Middle */}
-                <img src={profile} alt="" width={`10%`} className='md:absolute bottom-8 left-2/4 border rounded-full '/>
-                <img src={profile} alt="" width={`10%`} className='md:absolute bottom-20 left-96 border rounded-full '/>
-                <img src={profile} alt="" width={`10%`} className='md:absolute bottom-20 right-72 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='absolute left-20 top-0 md:absolute bottom-8 left-2/4 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='absolute bottom-2 left-28 md:absolute bottom-20 left-96 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='absolute bottom-2 left-40 md:absolute bottom-20 right-72 border rounded-full '/>
                 {/* End */}
-                <img src={profile} alt="" width={`10%`} className='md:absolute top-20 right-0 border rounded-full '/>
-                <img src={profile} alt="" width={`10%`} className='md:absolute bottom-32 right-32 border rounded-full '/>
-                <img src={profile} alt="" width={`10%`} className='md:absolute top-20 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='hidden md:absolute top-20 right-0 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='absolute right-10 top-0 md:absolute bottom-32 right-32 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='hidden md:absolute top-20 border rounded-full '/>
 
 
             </div>
