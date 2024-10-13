@@ -247,16 +247,16 @@ function mainSection(){
             <div className='relative'>
                 <img src={lineJustAboveTestimonial} alt="" width={`100%`}/>
                 {/* Start */}
-                <img src={profile} alt="" width={`10%`} className='absolute top-20 border rounded-full '/>
-                <img src={profile} alt="" width={`10%`} className='absolute bottom-32 left-48 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='md:absolute top-20 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='md:absolute bottom-32 left-48 border rounded-full '/>
                 {/* Middle */}
-                <img src={profile} alt="" width={`10%`} className='absolute bottom-8 left-2/4 border rounded-full '/>
-                <img src={profile} alt="" width={`10%`} className='absolute bottom-20 left-96 border rounded-full '/>
-                <img src={profile} alt="" width={`10%`} className='absolute bottom-20 right-72 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='md:absolute bottom-8 left-2/4 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='md:absolute bottom-20 left-96 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='md:absolute bottom-20 right-72 border rounded-full '/>
                 {/* End */}
-                <img src={profile} alt="" width={`10%`} className='absolute top-20 right-0 border rounded-full '/>
-                <img src={profile} alt="" width={`10%`} className='absolute bottom-32 right-32 border rounded-full '/>
-                <img src={profile} alt="" width={`10%`} className='absolute top-20 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='md:absolute top-20 right-0 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='md:absolute bottom-32 right-32 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='md:absolute top-20 border rounded-full '/>
 
 
             </div>
