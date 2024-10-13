@@ -68,13 +68,13 @@ function mainSection(){
             <div>
                 <img src={founderFriday} alt="" className='z-20'/>
             </div>
-            <div className='md:flex flex-col justify-center align-center'>
+            <div className='pt-3 md:flex flex-col justify-center align-center'>
                 {/* <div>  */}
                     <h3 className='text-2xl font-bold'>Who are we</h3>
                     <p>Born from the vibrant startup ecosystem of Abuja, we recognized <br />
                     the need for a consistent, high-quality networking platform where <br />
                     founders, innovators, and tech enthusiasts could connect, share <br /> ideas, and foster collaboration.</p>
-                    <div className='md:flex gap-5'>
+                    <div className='mt-3 flex gap-5'>
                         <button className='border bg-violet-700 border-violet-700 text-white px-7 py-1 rounded-full'>Register <i className="bi bi-arrow-right"></i></button>
                         <button className='border border-violet-700 bg-white text-violet-700 px-7 py-1 rounded-full'>Donate</button>
                     </div>
@@ -92,7 +92,7 @@ function mainSection(){
             <h3 className='text-center text-2xl font-bold'>What we offer</h3>
             {offerDatas.map((offerData)=>(
                 <div className='px-5'>
-                    <div className='flex justify-between my-4'>
+                    <div className='flex flex-col md:flex justify-between my-4'>
                         {/* (i)dot, h3 ,p i */}
                         <i className="bi bi-circle-fill"></i>
                         <h4 className='text-xl font-bold'>{offerData}</h4>
@@ -109,9 +109,9 @@ function mainSection(){
 
 
         {/*What happens at Founders Friday  */}
-        <div className=''>
+        <div className='my-10'>
             <div className='md:flex justify-between relative px-10'>
-                <div className='w-1/2 mt-10'>
+                <div className='md:w-1/2 mt-10'>
                     <strong className='text-violet-700'>Founders Friday</strong>
                     <h1>What Happens At <br />Founders Friday</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac rutrum felis. 
@@ -122,10 +122,10 @@ function mainSection(){
                         <button className='mt-3 px-4 py-2 border rounded-xl bg-violet-700 text-white'>Learn More <i className="bi bi-arrow-right"></i> </button>
                 </div>
                 <div className='absolute'>
-                    {/* <img src={whatHappensLine} alt="" className='md:relative h-full bottom-60 w-full'/> */}
-                    <div className='md:relative'>
-                        {/* <img src={whatHappens1} alt="" width={`20%`} className='md:absolute right-20'/>
-                        <img src={whatHappens} alt="" width={`20%`}/> */}
+                    <img src={whatHappensLine} alt="" className='w-full md:relative h-full bottom-60 w-full'/>
+                    <div className='md:absolute top-0 right-0'>
+                        <img src={whatHappens1} alt="" width={`50%`} className='absolute left-20 top-1/3 md:relative top-32 left-76 z-0'/>
+                        <img src={whatHappens} alt="" width={`50%`} className='absolute left-8 top-2/3 md:absolute top-60 right-60 z-10'/>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@ function mainSection(){
 
 
         {/* Sponsor */}
-        <div className='md:py-32 px-10'>
+        <div className='pt-10 md:py-32 px-10 mt-80'>
             <div className='md:flex justify-between'>
                 <div className=''>
                     <strong className='text-violet-700'>Sponsor the next Friday</strong>
@@ -149,28 +149,28 @@ function mainSection(){
             </div>
 
             {/* Chart */}
-            <div className='md:flex justify-between gap-8 px-10'>
-                <div className='border border-violet-500 shadow-2xl p-3 rounded-xl md:w-full flex justify-center'>            
+            <div className='w-full md:flex justify-between gap-8 px-10'>
+                <div className='w-full border border-violet-500 shadow-2xl p-3 rounded-xl md:w-full flex justify-center'>            
                     <div className='md:flex gap-10'>
                         <div className=''>
-                            <div className='border p-8 rounded-full w-56 h-56 text-center'>
+                            <div className='w-full md:border p-8 rounded-full w-56 h-56 text-center'>
                                 {/* border-violet-700 rounded-full */}
                                 <h4 className='text-xl font-bold'>Networking Opportunites</h4>
                                 <p>Connect with industry leaders, founders, and potential partners.</p>
                             </div><br />
-                            <div className='border p-8 rounded-full w-56 h-56 text-center'>
+                            <div className='md:border p-8 rounded-full w-56 h-56 text-center'>
                                 {/* border-violet-700 rounded-full */}
                                 <h4 className='text-xl font-bold'>Brand Association</h4>
                                 <p>Connect with industry leaders, founders, and potential partners.</p>
                             </div>
                         </div>
                         <div className=''>
-                            <div className='border p-8 rounded-full w-56 h-56 text-center'>
+                            <div className='md:border p-8 rounded-full w-56 h-56 text-center'>
                                 {/* border-violet-700 rounded-full */}
                                 <h4 className='text-xl font-bold'>Community Impact</h4>
                                 <p>Connect with industry leaders, founders, and potential partners.</p>
                             </div><br />
-                            <div className='border p-8 rounded-full w-56 h-56 text-center'>
+                            <div className='md:border p-8 rounded-full w-56 h-56 text-center'>
                                 {/* border-violet-700 rounded-full */}
                                 <h4 className='text-xl font-bold'>Visibility</h4>
                                 <p>Connect with industry leaders, founders, and potential partners.</p>
@@ -178,12 +178,12 @@ function mainSection(){
                         </div>
                     </div>
                 </div>  
-                <div className='md:pt-3 w-4/5'>
-                    <strong>How to Sponsor</strong><br />
+                <div className='w-full pt-8 md:pt-3 w-4/5'>
+                    <strong className='text-2xl md:font-lg'>How to Sponsor</strong><br />
                     <i className='font-thin text-slate-500'>Ready to make an impact</i>
                     <p>Fill out the form below or contact us at [contact email/phone number] to learn more about how you can sponsor the next Founders Friday</p>
                     <div>
-                        <form action="" className='mt-5 md:grid grid-cols-2 gap-5'>
+                        <form action="" className='mt-5 flex flex-col gap-5 md:grid grid-cols-2 gap-5'>
                             <div>
                                 <label htmlFor="" className='block'>Name</label>
                                 <input type="text" name="" id="" className='border border-slate-500 rounded-md h-8' />

@@ -28,16 +28,19 @@ function Footer(){
             <br />
             <div className='gap-3 md:flex justify-between align-center'>
                 <div className="flex gap-3">
+                    
                     <img src={facebook} alt="" width="50px" height="50px" />
                     <img src={instagram} alt="" width="50px" height="50px" />
                     <img src={x} alt="" width="50px" height="50px" />
                 </div>
-                <div className="flex gap-3">
-                    <a href="#" className='font-bold text-violet-700'>Adejumo Adetomiwa <br /><small>Front-end Developer</small></a>
-                    <a href="#">Home</a>
-                    <a href="#">About us</a>
-                    <a href="#">Gallery</a>
-                    <a href="#">Contact Us</a>
+                <div className="block pt-3 md:flex gap-3">
+                    <a href="#" className='font-bold text-violet-700'>Adejumo Adetomiwa</a>
+                    <div className='flex gap-3'>
+                        <a href="#">Home</a>
+                        <a href="#">About us</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">Contact Us</a>
+                    </div>
                 </div>
             </div>
         </div>
