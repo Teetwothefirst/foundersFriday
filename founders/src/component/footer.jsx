@@ -14,7 +14,7 @@ function Footer(){
         </div>
         <div className='flex justify-center align-center'>
             <div>
-            <div><h3>Want To Be A Part Of Abuja’s Biggest Tech Community?</h3></div>
+            <div><h3 className='text-2xl font-bold'>Want To Be A Part Of Abuja’s Biggest Tech Community?</h3></div>
             <div className='flex justify-center'>
                 <button className='border-2 border-violet-800 rounded-full p-2'>Register for our next event <i className="bi bi-chevron-double-right"></i> </button>
             </div>
@@ -31,6 +31,7 @@ function Footer(){
                     <img src={x} alt="" width="50px" height="50px" />
                 </div>
                 <div className="flex gap-3">
+                    <a href="#" className='font-bold text-violet-700'>Adejumo Adetomiwa <br /><small>Front-end Developer</small></a>
                     <a href="#">Home</a>
                     <a href="#">About us</a>
                     <a href="#">Gallery</a>

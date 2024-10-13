@@ -28,7 +28,7 @@ function mainSection(){
         <div className='md:flex'>
             <div className='my-10 w-full md:my-5 pt-14 ps-10 w-1/3'>
                 <small>Join our premier monthly meetup for startup founders and tech visionaries</small>
-                <h3 className='text-violet-700 text-bold'>Connect, Collaborate, innovate</h3>
+                <h3 className='text-violet-700 text-2xl font-bold'>Connect, Collaborate, innovate</h3>
                 <p className='t'>Every last Friday of the month, we bring together the brightest minds in our local tech ecosystem. 
                 Whether you're a seasoned entrepreneur or just starting your journey, 
                     Founder's Friday is your launchpad for new ideas, valuable connections, and game-changing opportunities.
