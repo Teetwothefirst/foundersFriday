@@ -1,6 +1,6 @@
 import logo from '../assets/logo.jpg'
 import facebook from '../assets/facebook.png'
-import instagram from '../assets/instagram.png'
+import instagram from '../assets/Instagram.png'
 import x from '../assets/x.png'
 
 
