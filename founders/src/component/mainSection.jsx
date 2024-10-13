@@ -23,7 +23,7 @@ function mainSection(){
         const names = ['Mr Belba Ngoy', 'Mr Belba Ngoy', 'Mr Belba Ngoy']
         const offerDatas = ['Monthly Meetups', 'Diverse Network', 'Knowledge Sharing', 'Collaboration   Opportunities', 'Community Support']
     return <>
-    <div className='pt-14 z-10'>
+    <div className='w-full pt-14 z-10'>
         {/* Connect, Collaborate, innovate */}
         <div className='md:flex'>
             <div className='my-10 w-full md:my-5 pt-14 ps-10 w-1/3'>
@@ -46,16 +46,16 @@ function mainSection(){
                     <img src={solana} alt=""  width={40}/>
                 </div>
                 <div className='mt-3'>
-                    <strong>Become a collaborator today <i class="bi bi-box-arrow-up-right"></i></strong>
+                    <strong>Become a collaborator today <i className="bi bi-box-arrow-up-right"></i></strong>
                 </div>
             </div>
             <div className='md:w-full flex align-end relative'>
                 <img src={lineAcrossLanding} alt="" width={`70%`}/>
                 <div className='md:absolute top-2'> 
-                    <img src={bend1} alt="" width={`50%`} className='relative top-0 right-32 md:relative top-20 left-20'/>
-                    <img src={bend2} alt="" width={`50%`}  className='md:relative bottom-20 left-64'/>
-                    <img src={bend3} alt="" width={`30%`}  className='md:relative bottom-32 left-8'/>
-                    <img src={bend4} alt="" width={`20%`}  className='md:relative bottom-32 left-32'/>
+                    <img src={bend1} alt="" width={`50%`} className='hidden md:block relative top-20 left-20'/>
+                    <img src={bend2} alt="" width={`50%`}  className='hidden md:block relative bottom-20 left-64'/>
+                    <img src={bend3} alt="" width={`30%`}  className='absolute md:relative bottom-32 left-8'/>
+                    <img src={bend4} alt="" width={`20%`}  className='absolute md:relative bottom-32 left-32'/>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@ function mainSection(){
                     founders, innovators, and tech enthusiasts could connect, share <br /> ideas, and foster collaboration.</p>
                     <div className='mt-3 flex gap-5'>
                         <button className='border bg-violet-700 border-violet-700 text-white px-7 py-1 rounded-full'>Register <i className="bi bi-arrow-right"></i></button>
-                        <button className='border border-violet-700 bg-white text-violet-700 px-7 py-1 rounded-full'>Donate <i class="bi bi-cash-coin"></i></button>
+                        <button className='border border-violet-700 bg-white text-violet-700 px-7 py-1 rounded-full'>Donate <i className="bi bi-cash-coin"></i></button>
                     </div>
                     <div className='mt-5'>
                         <strong>Founder's Friday is more than just a meetup — it's a movement.</strong>
@@ -125,7 +125,7 @@ function mainSection(){
                     <img src={whatHappensLine} alt="" className='w-full md:relative h-full bottom-60 w-full'/>
                     <div className='md:absolute top-0 right-0'>
                         <img src={whatHappens1} alt="" width={`50%`} className='absolute left-20 top-1/3 md:relative top-32 left-76 z-0'/>
-                        <img src={whatHappens} alt="" width={`50%`} className='absolute left-8 top-2/3 md:absolute top-60 right-60 z-10'/>
+                        <img src={whatHappens} alt="" width={`50%`} className='hidden md:block absolute top-60 right-60 z-10'/>
                     </div>
                 </div>
             </div>
@@ -137,7 +137,7 @@ function mainSection(){
             <div className='md:flex justify-between'>
                 <div className=''>
                     <strong className='text-violet-700'>Sponsor the next Friday</strong>
-                    <h3 className='text-4xl font-bold'>Why Sponsor <br />Founders Friday?</h3>
+                    <h3 className='text-3xl font-bold md:text-4xl font-bold'>Why Sponsor <br />Founders Friday?</h3>
                 </div>
                 <div className='w-full md:w-1/2 mb-14'>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac rutrum felis. 
@@ -220,7 +220,7 @@ function mainSection(){
                         <div className='w-full'>
                             <h3 className='text-lg md:text-2xl font-bold'>Founders Friday is coming to</h3>
                             <h1 className='text-xl md:text-4xl text-violet-700'>Kaduna</h1>
-                            <p className='hidden md:visible'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac <br /> rutrum felis. 
+                            <p className='hidden md:block'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac <br /> rutrum felis. 
                                 Nulla nibh lorem, facilisis vel est at, vehicula dignissim <br /> lacus. Cras sagittis imperdiet dolor, 
                                 eget accumsan leo suscipit id. <br />Maecenas ut ante quis quam lobortis consequat eu id turpis. 
                                 Pellentesque habitant morbi tristique senectus et <br />netus et malesuada fames ac turpis egestas
@@ -247,16 +247,16 @@ function mainSection(){
             <div className='relative'>
                 <img src={lineJustAboveTestimonial} alt="" width={`100%`}/>
                 {/* Start */}
-                <img src={profile} alt="" width={`10%`} className='absolute top-5 md:absolute top-20 border rounded-full '/>
-                <img src={profile} alt="" width={`10%`} className='absolute left-10 top-0 md:absolute bottom-32 left-48 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='absolute top-5 border rounded-full md:hidden'/>{/*absolute top-20 right-80 */}
+                <img src={profile} alt="" width={`10%`} className='absolute left-10 top-0 border rounded-full md:hidden'/>{/*absolute bottom-32 left-48  */}
                 {/* Middle */}
                 <img src={profile} alt="" width={`10%`} className='absolute left-20 top-0 md:absolute bottom-8 left-2/4 border rounded-full '/>
-                <img src={profile} alt="" width={`10%`} className='absolute bottom-2 left-28 md:absolute bottom-20 left-96 border rounded-full '/>
-                <img src={profile} alt="" width={`10%`} className='absolute bottom-2 left-40 md:absolute bottom-20 right-72 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='hidden md:block absolute bottom-20 left-96 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='absolute bottom-0 left-28 border rounded-full md:hidden'/>{/*absolute bottom-20 right-72 border rounded-full*/}
                 {/* End */}
-                <img src={profile} alt="" width={`10%`} className='hidden md:absolute top-20 right-0 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='hidden md:block absolute top-20 right-0 border rounded-full '/>
                 <img src={profile} alt="" width={`10%`} className='absolute right-10 top-0 md:absolute bottom-32 right-32 border rounded-full '/>
-                <img src={profile} alt="" width={`10%`} className='hidden md:absolute top-20 border rounded-full '/>
+                <img src={profile} alt="" width={`10%`} className='hidden md:block absolute top-20 border rounded-full '/>
 
 
             </div>

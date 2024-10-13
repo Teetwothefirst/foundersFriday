@@ -3,7 +3,7 @@ import logo from '../assets/logo.jpg'
 
 function header(){
 
-    
+
 
     return <>
         <div>
@@ -16,7 +16,7 @@ function header(){
             </div>
             <div className='flex justify-end self-end'>
                 <div className='visible md:hidden'>
-                    <button className=''><i class="bi bi-border-width"></i></button>
+                    <button className=''><i className="bi bi-border-width"></i></button>
                 </div>
                 <div className='hidden md:visible flex items-center gap-20'>
                     <div className='md:flex gap-4'>
