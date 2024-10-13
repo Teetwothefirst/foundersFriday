@@ -13,7 +13,9 @@ import bend1 from '../assets/bend1.png'
 import bend2 from '../assets/bend2.png'
 import bend3 from '../assets/bend3.png'
 import bend4 from '../assets/bend4.png'
-
+import whatHappens from '../assets/whatHappens.png'
+import whatHappens1 from '../assets/whatHappens1.png'
+import whatHappensLine from '../assets/whatHappensLine.png'
 
 
 function mainSection(){
@@ -49,10 +51,10 @@ function mainSection(){
             <div className='md:w-full flex align-end relative'>
                 <img src={lineAcrossLanding} alt="" width={`70%`}/>
                 <div className='md:absolute top-2'> 
-                    <img src={bend1} alt="" width={`50%`} className='relative top-20 left-20'/>
-                    <img src={bend2} alt="" width={`50%`}  className='relative bottom-20 left-64'/>
-                    <img src={bend3} alt="" width={`30%`}  className='relative bottom-32 left-8'/>
-                    <img src={bend4} alt=""  width={`20%`}  className='relative bottom-32 left-32'/>
+                    <img src={bend1} alt="" width={`50%`} className='relative top-0 right-32 md:relative top-20 left-20'/>
+                    <img src={bend2} alt="" width={`50%`}  className='md:relative bottom-20 left-64'/>
+                    <img src={bend3} alt="" width={`30%`}  className='md:relative bottom-32 left-8'/>
+                    <img src={bend4} alt="" width={`20%`}  className='md:relative bottom-32 left-32'/>
                 </div>
             </div>
         </div>
@@ -63,7 +65,7 @@ function mainSection(){
         {/* Who are we  */}
         <div className='px-5 md:flex justify-around'>
             <div>
-                <img src={founderFriday} alt="" />
+                <img src={founderFriday} alt="" className='z-20'/>
             </div>
             <div className='md:flex flex-col justify-center align-center'>
                 {/* <div>  */}
@@ -71,9 +73,9 @@ function mainSection(){
                     <p>Born from the vibrant startup ecosystem of Abuja, we recognized <br />
                     the need for a consistent, high-quality networking platform where <br />
                     founders, innovators, and tech enthusiasts could connect, share <br /> ideas, and foster collaboration.</p>
-                    <div className=''>
+                    <div className='md:flex gap-5'>
                         <button className='border bg-violet-700 border-violet-700 text-white px-7 py-1 rounded-full'>Register <i className="bi bi-arrow-right"></i></button>
-                        <button className='border border-violet-700 bg-white text-violet-700 px-7 py-1 '>Donate</button>
+                        <button className='border border-violet-700 bg-white text-violet-700 px-7 py-1 rounded-full'>Donate</button>
                     </div>
                     <div className='mt-5'>
                         <strong>Founder's Friday is more than just a meetup — it's a movement.</strong>
@@ -116,10 +118,14 @@ function mainSection(){
                         Cras sagittis imperdiet dolor, eget accumsan leo suscipit id.
                         Maecenas ut ante quis quam lobortis consequat eu id turpis. 
                         Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-                        <button className='px-3 py-1 border rounded-full bg-violet-700 text-white'>Learn More ---</button>
+                        <button className='px-3 py-1 border rounded-xl bg-violet-700 text-white'>Learn More <i className="bi bi-arrow-right"></i> </button>
                 </div>
                 <div>
-                    <img src="" alt="" />
+                    <img src={whatHappensLine} alt="" />
+                    <div className='md:absolute'>
+                        <img src={whatHappens1} alt="" width={`50%`}/>
+                        <img src={whatHappens} alt="" width={`50%`}/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,7 +138,7 @@ function mainSection(){
                     <strong className='text-violet-700'>Sponsor the next Friday</strong>
                     <h3>Why Sponsor <br />Founders Friday?</h3>
                 </div>
-                <div>
+                <div className='w-full md:w-1/2 mb-14'>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac rutrum felis. 
                         Nulla nibh lorem, facilisis vel est at, vehicula dignissim lacus. 
                         Cras sagittis imperdiet dolor, eget accumsan leo suscipit id. 
@@ -143,7 +149,7 @@ function mainSection(){
             <div className='md:flex justify-between'>
                 <div className='md:grid grid-cols-2 gap-5'>
                     <div>
-                        <div className='border'>
+                        <div className='border p-5 rounded-full w-48 h-48'>
                             {/* border-violet-700 rounded-full */}
                             <h4>Networking Opportunites</h4>
                             <p>Connect with industry leaders, founders, and potential partners.</p>

@@ -4,7 +4,7 @@ import HeaderComp from '../component/header'
 
 function Home(){
     return <>
-        <div className=''>
+        <div className='px-2 md:p-0'>
             <HeaderComp></HeaderComp>
             <MainSection></MainSection>
             <Footer></Footer>

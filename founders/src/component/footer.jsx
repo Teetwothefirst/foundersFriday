@@ -1,6 +1,6 @@
 import logo from '../assets/logo.jpg'
 import facebook from '../assets/facebook.png'
-import Instagram from '../assets/instagram.png'
+import instagram from '../assets/instagram.png'
 import x from '../assets/x.png'
 
 
@@ -27,7 +27,7 @@ function Footer(){
             <div className='gap-3 md:flex justify-between align-center'>
                 <div className="flex gap-3">
                     <img src={facebook} alt="" width="50px" height="50px" />
-                    <img src={Instagram} alt="" width="50px" height="50px" />
+                    <img src={instagram} alt="" width="50px" height="50px" />
                     <img src={x} alt="" width="50px" height="50px" />
                 </div>
                 <div className="flex gap-3">
